@@ -1,26 +1,4 @@
 
-// async function affichageConseils() {
-
-
-//     const urlApi = 'https://api.adviceslip.com/advice';
-//     const idConseil = '	https://api.adviceslip.com/advice/{slip_id}';
-
-//     fetch(urlApi)
-//         .then(response => response.json())
-//         .then(data => {
-
-//             console.log(data);
-//             const paragrapheConseil = document.getElementById("conseilDuJour");
-//             // Bouclez sur les données pour afficher les universités
-//             data.forEach(universite => {
-//                 const listUni = document.createElement("li");
-//                 listUni.textContent = universite.name;
-//                 paragrapheConseil.appendChild(listUni);
-//                 console.log(listUni.textContent);
-//             });
-//         })
-//         .catch(error => console.error('Erreur:', error));
-// }
 
 // affichageConseils();
 const paragrapheIdConseil = document.getElementById("idConseil");
@@ -37,7 +15,7 @@ async function afficherConseils() {
         const idConseil = donnee.slip.id;
         
         
-        paragrapheIdConseil.textContent += idConseil;
+        paragrapheIdConseil.textContent = "Advice #"+ idConseil;
         paragrapheConseil.textContent = `"${donnee.slip.advice}"`;
         
        
@@ -47,5 +25,7 @@ async function afficherConseils() {
     }
 }
 afficherConseils();
+
+document.getElementById("boutonAleatoire").addEventListener("click", afficherConseils);
 
 paragrapheConseil.textContent = `"${paragrapheConseil.textContent}"`;

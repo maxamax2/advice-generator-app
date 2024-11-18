@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    color: #CFE3E9;
+    font-family: "Manrope", sans-serif;
+    background-color: #202632;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 225px;
+}
+
+.container__advice {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 640px;
+    height: 332px;
+    background-color: #313A49;
+    border-radius: 15px;
+}
+
+#idConseil {
+
+    color: #53FDAA;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 52px;
+    margin-bottom: 36px;
+
+}
+
+#conseilDuJour {
+    min-height: 114px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container__advice--bouton {
+    margin-top: 32px;
+    background-color: #53FDAA;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.container__advice--image {
+    text-align: center;
+}

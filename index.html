@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
 
-  
-  <p id="idConseil">Advices #</p>
+  <div class="container__advice">
+    <p id="idConseil">Advices #</p>
+    <p id="conseilDuJour"></p>
+    <img class="container__advice--division" src="images/pattern-divider-desktop.svg" alt="Division décorative du advice generator app">
+    
+    <div>
+       <button id="boutonAleatoire" class="container__advice--bouton"><img class="container__advice--image" src="images/icon-dice.svg" alt=""></button>
+    </div>
+     
+   
+  </div>
 
-  <p id="conseilDuJour"></p>
- 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+
+
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/maxamax2">Maxime Lebrun</a>.
   </div>
+</footer>
+  
   <script src="js/script.js"></script>
 </body>
+
 </html>
