@@ -11,6 +11,14 @@ body {
     padding-top: 225px;
 }
 
+@media (max-width: 375px) {
+    .container__advice {
+       max-width: 320px;
+        margin: 20px;
+        height: 600px;
+    }
+}
+
 .container__advice {
     padding-left: 20px;
     padding-right: 20px;
@@ -21,9 +29,16 @@ body {
     border-radius: 15px;
 }
 
-#idConseil {
+@media (max-width: 375px) {
+    .container__advice {
+       max-width: 320px;
+        margin: 20px;
+       height: fit-content;
+    }
+}
 
-    color: #53FDAA;
+#idConseil {
+  color: #53FDAA;
     font-size: 18px;
     font-weight: bold;
     margin-top: 52px;
@@ -37,6 +52,14 @@ body {
     font-weight: bold;
 }
 
+
+@media (max-width: 375px) {
+    .container__advice--division {
+      width: 320px;
+    }
+}
+
+
 .container__advice--bouton {
     margin-top: 32px;
     background-color: #53FDAA;
@@ -47,6 +70,16 @@ body {
     border-radius: 50%;
 }
 
+.container__advice--bouton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #53FDAA, 0 0 30px #53FDAA, 0 0 40px #53FDAA, 0 0 50px #53FDAA;
+    transform: rotate(10deg);
+}
+
 .container__advice--image {
     text-align: center;
+}
+
+.attribution {
+    margin-top: 200px;
 }
